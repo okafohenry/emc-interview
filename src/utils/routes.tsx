@@ -1,9 +1,12 @@
 import React from "react";
 import { RouteObject } from "react-router-dom";
+import { Home, Inbox, Message } from "../pages";
 
 
 const routes: RouteObject[] = [
-    { path: '/', element: <div>Hi there! <br/> This template layout is a brain child of HOC's (Henry Okafor Chidiebere)</div>}
+    { path: '/', element: <Home/> },
+    { path: '/inbox', element: <Inbox /> },
+    { path: '/message/:id', element: <Message /> }
 ];
 
 export { routes };

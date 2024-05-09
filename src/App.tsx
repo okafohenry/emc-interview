@@ -2,15 +2,18 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from "./utils/routes"
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter(routes);
 
 function App() {
   return (
-    <Provider store={store}>
+    <>
       <RouterProvider router={router} />
-    </Provider>
+      <ToastContainer position='top-right' />
+    </>
   );
 }
 
