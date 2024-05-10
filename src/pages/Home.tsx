@@ -41,7 +41,7 @@ export default function Home({}: Props) {
         try{
             const res = await userService.getProfile();
             if(!res?.success){
-                toast.error(res?.error);
+                // toast.error(res?.error);
                 return;
             }
             setUserInfo({ _id: res?.data?._id, username: res?.data?.username });
@@ -52,7 +52,7 @@ export default function Home({}: Props) {
             }
 
         }catch(err){
-            toast.error('Unable to get user profile');
+            // toast.error('Unable to get user profile');
             return;
         }
     }

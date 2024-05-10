@@ -2,9 +2,9 @@ import { toast } from 'react-toastify';
 
 
   const logout = () => {
-    localStorage.clear();
-    window.location.href = "/";
-    toast.error('Session expired!')
+    // localStorage.clear();
+    // window.location.href = "/";
+    // toast.error('Session expired!')
   };
 
   export const requestHeader = {
