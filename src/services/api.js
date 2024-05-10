@@ -26,7 +26,7 @@ import { toast } from 'react-toastify';
    */
 
 
-  const API_USER_URL = "http://localhost:3000/v1/";   // production BASE URL from backend
+  const API_USER_URL = "https://emc-interview-be.onrender.com/v1/";   // production BASE URL from backend
   // const API_USER_URL =   "http://192.168.0.161:3000"   // development BASE URL from backend
 
   export async function request(url, method, payload, token, text, form) {
