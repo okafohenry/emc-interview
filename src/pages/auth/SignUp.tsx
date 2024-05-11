@@ -89,7 +89,7 @@ export default function SignUp({ setUserInfo, setTotalUnread, setTotalMsgs }: Pr
                     onChange={(e: any) => setFormData({...formData, password: e.target.value})} 
                     />
             </div>
-            <button className={styles.btn} type="submit">{loading ? <ScaleLoader height={12} width={3} color='white' /> : 'Sign Up'}</button>
+            <button className={`${styles.btn} ${loading && 'bg-emc-primary'}`} type="submit">{loading ? <ScaleLoader height={12} width={3} color='white' /> : 'Sign Up'}</button>
         </form>
     )
 }

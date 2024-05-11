@@ -91,7 +91,7 @@ export default function SignIn({ setTotalUnread, setTotalMsgs, setUserInfo }: Pr
                     onChange={(e: any) => setFormData({...formData, password: e.target.value})}
                     />
             </div>
-            <button className={styles.btn}>{loading ? <ScaleLoader height={12} width={3} color='white' /> : 'Log In'}</button>
+            <button className={`${styles.btn} ${loading && 'bg-emc-primary'}`}>{loading ? <ScaleLoader height={12} width={3} color='white' /> : 'Log In'}</button>
         </form>
     )
 }
