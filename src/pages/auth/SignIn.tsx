@@ -39,7 +39,7 @@ export default function SignIn({ setTotalUnread, setTotalMsgs, setUserInfo }: Pr
             const response = await authService.signIn(formData);
             setLoading(false);
             if(!response.success){
-                toast.error('Login failed, try again!');
+                toast.error(response.error || 'Login failed, try again!');
                 return;
             }
             localStorage.setItem('emc-token', response?.token);
